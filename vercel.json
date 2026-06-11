@@ -1,7 +1,4 @@
 {
   "buildCommand": "vite build",
-  "framework": null,
-  "env": {
-    "NITRO_PRESET": "vercel"
-  }
+  "framework": null
 }
