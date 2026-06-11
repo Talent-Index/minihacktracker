@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F5F9"/>
+      <stop offset="100%" style="stop-color:#E8E6EA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Red accent bar top -->
+  <rect width="1200" height="8" fill="#FF394A"/>
+
+  <!-- Card -->
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="white" filter="drop-shadow(0 8px 32px rgba(22,22,23,0.10))"/>
+
+  <!-- Red left accent -->
+  <rect x="80" y="80" width="8" height="470" rx="4" fill="#FF394A"/>
+
+  <!-- LIVE badge -->
+  <rect x="880" y="120" width="100" height="34" rx="17" fill="#12B76A14" stroke="#12B76A40" stroke-width="1"/>
+  <circle cx="905" cy="137" r="5" fill="#12B76A"/>
+  <text x="918" y="142" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#0d8a4f" letter-spacing="1">LIVE</text>
+
+  <!-- Wordmark: team¹ -->
+  <text x="130" y="200" font-family="system-ui,-apple-system,sans-serif" font-size="80" font-weight="700" fill="#161617" letter-spacing="-2">team</text>
+  <text x="416" y="170" font-family="system-ui,-apple-system,sans-serif" font-size="44" font-weight="700" fill="#161617">1</text>
+
+  <!-- Divider -->
+  <line x1="130" y1="220" x2="1060" y2="220" stroke="#E8E6EA" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="130" y="282" font-family="system-ui,-apple-system,sans-serif" font-size="36" font-weight="700" fill="#161617" letter-spacing="-0.5">Kenya · Mini Hack 2026</text>
+  <text x="130" y="328" font-family="system-ui,-apple-system,sans-serif" font-size="28" font-weight="400" fill="#3a3a3d">Quest Tracker &amp; Live Leaderboard</text>
+
+  <!-- Description -->
+  <text x="130" y="390" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#8a8a90">Complete quests across Payments · Gaming · Agentic AI</text>
+  <text x="130" y="418" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#8a8a90">and earn points on Avalanche.</text>
+
+  <!-- Bottom tag line -->
+  <text x="130" y="496" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="700" fill="#FF394A" letter-spacing="2">BUILD · SHIP · EARN</text>
+
+  <!-- Avalanche badge -->
+  <rect x="860" y="440" width="220" height="50" rx="10" fill="#FF394A14" stroke="#FF394A40" stroke-width="1"/>
+  <text x="890" y="472" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="700" fill="#FF394A">Powered by Avalanche</text>
+</svg>

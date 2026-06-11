@@ -85,14 +85,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Live quest tracker and leaderboard for team¹ Kenya's Mini Hack 2026 on Avalanche. Complete quests across Payments, Gaming, and Agentic AI cohorts and climb the board." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://minihacktracker.vercel.app" },
-      { property: "og:image", content: "https://minihacktracker.vercel.app/og-image.png" },
+      { property: "og:image", content: "https://minihacktracker.vercel.app/og-image.svg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@avaxafrica" },
       { name: "twitter:title", content: "team¹ Kenya · Mini Hack 2026 — Quest Tracker" },
       { name: "twitter:description", content: "Live quest tracker and leaderboard for team¹ Kenya's Mini Hack 2026 on Avalanche. Complete quests, earn points, climb the board." },
-      { name: "twitter:image", content: "https://minihacktracker.vercel.app/og-image.png" },
+      { name: "twitter:image", content: "https://minihacktracker.vercel.app/og-image.svg" },
     ],
     links: [
       {
