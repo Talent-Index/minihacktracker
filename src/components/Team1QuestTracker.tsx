@@ -27,9 +27,11 @@ const COHORTS = [
     emoji: "💳",
     status: "active" as const,
     quests: [
-      { id: "GxbeoL", title: "Builder Registration", description: "Register as a builder and set up your Core Wallet to start the Mini Hack.", points: 20, url: "https://tally.so/r/GxbeoL", week: 1, emoji: "🚀" },
-      { id: "rjv4Zo", title: "Smart Contract Deployment", description: "Deploy your first smart contract to the Avalanche Fuji testnet.", points: 20, url: "https://tally.so/r/rjv4Zo", week: 2, emoji: "⚙️" },
-      { id: "lbzkqp", title: "Payment Integration", description: "Build and submit a working payment integration on Avalanche.", points: 20, url: "https://tally.so/r/lbzkqp", week: 3, emoji: "💸" },
+      { id: "GxbeoL", title: "Builder Registration", description: "Register as a builder and set up your Core Wallet to start the Mini Hack.", points: 20, url: "https://tally.so/r/GxbeoL", week: 1, session: 1, emoji: "🚀" },
+      { id: "rjv4Zo", title: "Smart Contract Deployment", description: "Deploy your first smart contract to the Avalanche Fuji testnet.", points: 20, url: "https://tally.so/r/rjv4Zo", week: 2, session: 3, emoji: "⚙️" },
+      { id: "Y5qG65", title: "Week 2 · Session 4 Quest", description: "Complete the Week 2 Session 4 builder challenge.", points: 20, url: "https://tally.so/r/Y5qG65", week: 2, session: 4, emoji: "🛠️" },
+      { id: "lbzkqp", title: "Payment Integration", description: "Build and submit a working payment integration on Avalanche.", points: 20, url: "https://tally.so/r/lbzkqp", week: 3, session: 5, emoji: "💸" },
+      { id: "vGWv10", title: "Week 3 · Session 5 Quest", description: "Complete the Week 3 Session 5 builder challenge.", points: 20, url: "https://tally.so/r/vGWv10", week: 3, session: 5, emoji: "📡" },
     ],
   },
   {
