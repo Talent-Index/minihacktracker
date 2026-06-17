@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 // From team1 Branding Guidelines 2026:
 //   #FF394A Ava Red (primary), #161617 Dark Grey, #F5F5F9 Light Gray
 //   Typography: Kanit (primary), Inter (body)
-//   Logo: lowercase "team" + superscript "1"  ->  team¹
+//   Logo: /public/team1-logo.png (Team1 Text Black + Ava Red)
 const BRAND = {
   red: "#FF394A",
   redSoft: "#FFE4E7",
@@ -29,9 +29,9 @@ const COHORTS = [
     quests: [
       { id: "GxbeoL", title: "Builder Registration", description: "Register as a builder and set up your Core Wallet to start the Mini Hack.", points: 20, url: "https://tally.so/r/GxbeoL", week: 1, session: 1, emoji: "🚀" },
       { id: "rjv4Zo", title: "Smart Contract Deployment", description: "Deploy your first smart contract to the Avalanche Fuji testnet.", points: 20, url: "https://tally.so/r/rjv4Zo", week: 2, session: 3, emoji: "⚙️" },
-      { id: "Y5qG65", title: "Week 2 · Session 4 Quest", description: "Complete the Week 2 Session 4 builder challenge.", points: 20, url: "https://tally.so/r/Y5qG65", week: 2, session: 4, emoji: "🛠️" },
+      { id: "Y5qG65", title: "Week 2 · Session 4 Quest", description: "Complete the Week 2, Session 4 builder challenge.", points: 20, url: "https://tally.so/r/Y5qG65", week: 2, session: 4, emoji: "🛠️" },
       { id: "lbzkqp", title: "Payment Integration", description: "Build and submit a working payment integration on Avalanche.", points: 20, url: "https://tally.so/r/lbzkqp", week: 3, session: 5, emoji: "💸" },
-      { id: "vGWv10", title: "Week 3 · Session 5 Quest", description: "Complete the Week 3 Session 5 builder challenge.", points: 20, url: "https://tally.so/r/vGWv10", week: 3, session: 5, emoji: "📡" },
+      { id: "vGWv10", title: "Week 3 · Session 5 Quest", description: "Complete the Week 3, Session 5 builder challenge.", points: 20, url: "https://tally.so/r/vGWv10", week: 3, session: 5, emoji: "📡" },
     ],
   },
   {
@@ -121,25 +121,8 @@ async function fetchTally(formId: string) {
 }
 
 // ─── LOGO ────────────────────────────────────────────────────────────────────
-function Team1Wordmark({ size = 32, color = BRAND.ink }: { size?: number; color?: string }) {
-  // Per brand guide: lowercase "team" + superscript "1", Kanit Medium, never "TEAM1".
-  return (
-    <span
-      style={{
-        fontFamily: "'Kanit', sans-serif",
-        fontWeight: 600,
-        fontSize: size,
-        lineHeight: 1,
-        color,
-        letterSpacing: "-0.02em",
-        display: "inline-flex",
-        alignItems: "flex-start",
-      }}
-    >
-      team
-      <sup style={{ fontSize: size * 0.55, fontWeight: 600, lineHeight: 1, marginLeft: 1, top: "0.05em", position: "relative" }}>1</sup>
-    </span>
-  );
+function Team1Wordmark({ height = 32 }: { height?: number }) {
+  return <img src="/team1-logo.png" alt="team1" style={{ height, width: "auto", display: "block" }} />;
 }
 
 // ─── MAIN COMPONENT ──────────────────────────────────────────────────────────
@@ -286,7 +269,7 @@ export default function Team1QuestTracker() {
         <div style={wrapStyle}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "18px 0", gap: 12, flexWrap: "wrap" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-              <Team1Wordmark size={36} color={BRAND.ink} />
+              <Team1Wordmark height={36} />
               <div style={{ height: 28, width: 1, background: BRAND.line }} />
               <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.2 }}>
                 <span style={{ fontFamily: "'Kanit', sans-serif", fontWeight: 600, fontSize: 15, color: BRAND.ink, letterSpacing: "-0.01em" }}>
@@ -487,7 +470,7 @@ export default function Team1QuestTracker() {
         {/* FOOTER */}
         <footer style={{ marginTop: 50, borderTop: `1px solid ${BRAND.line}`, paddingTop: 20, display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <Team1Wordmark size={20} color={BRAND.ink} />
+            <Team1Wordmark height={20} />
             <span style={{ fontSize: 12, color: BRAND.mute }}>Kenya · Mini Hack 2026 · Powered by Tally + Avalanche</span>
           </div>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
